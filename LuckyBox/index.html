@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lucky Box</title>
+    <link rel="stylesheet" href="./lib/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="loader" class="loader_style">
+            <div>
+                <div class="lds-facebook">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <section id="errorScreen" style="display: none;" class="error_screen">
+            <div></div>
+            <div class="history_table_container" id="prizeHistory">
+                <h4>You Won</h4>
+                <ul id="historyList"></ul>
+            </div>
+            <div class="qr_code_revealer" id="qrCodeRevealer">
+                <img src="" alt="" id="qrCode">
+            </div>
+        </section>
+        <section class="non_member_screen" id="nonMemberScreen">
+            <div class="banner_non_member">
+                <img src="images/Banner_A.png" alt="banner_image" id="bannerImgNonMember">
+            </div>
+            <div>
+                <h3>Exclusively for</h3>
+                <h1>SILVER MEMBER</h1>
+                <h4>up only</h4>
+            </div>
+            <div>
+                <a href="" id="shopNow"><button>Shop Now</button></a>
+                <h5>To level up your membership!</h5>
+            </div>
+        </section>
+        <section class="play_screen" id="playScreen">
+            <div class="banner">
+                <img src="images/Banner_A.png" alt="banner_image" id="bannerImg">
+            </div>
+            <img src="images/Text_Subtitle.png" alt="" class="text_subtitle">
+            <img src="images/Cloud_A.png" alt="cloud_a" class="cloud a">
+            <img src="images/Cloud_B.png" alt="cloud_b" class="cloud b">
+            <img src="images/Cloud_C.png" alt="cloud_c" class="cloud c">
+            <div class="stageContainer a">
+                <img src="images/Stage_Front.png" alt="stage_a" class="stage a">
+                <img src="images/Box_Close.png" alt="box_1" class="boxClose _1">
+                <img src="images/Box_Close.png" alt="box_2" class="boxClose _2">
+                <img src="images/Box_Close.png" alt="box_3" class="boxClose _3">
+            </div>
+            <div class="stageContainer b">
+                <img src="images/Stage_Back.png" alt="stage_b" class="stage b">
+                <img src="images/Box_Close.png" alt="box_4" class="boxClose _4">
+                <img src="images/Box_Close.png" alt="box_5" class="boxClose _5">
+                <img src="images/Box_Close.png" alt="box_6" class="boxClose _6">
+            </div>
+            <div class="stageContainer c">
+                <img src="images/Stage_Back.png" alt="stage_c" class="stage c">
+                <img src="images/Box_Close.png" alt="box_7" class="boxClose _7">
+                <img src="images/Box_Close.png" alt="box_8" class="boxClose _8">
+                <img src="images/Box_Close.png" alt="box_9" class="boxClose _9">
+            </div>
+            <div class="prize_screen" id="prizeScreen">
+                <img src="images/Particle_A.png" alt="" class="particle_a" id="pA">
+                <img src="images/Particle_B.png" alt="" class="particle_b" id="pB">
+                <div class="announce_box" id="announceBox">
+                    <img src="images/Box_No_Lid.png" alt="box_no_lid" id="bol">
+                    <img src="images/Box_Lid.png" alt="box_lid" id="bl">
+                </div>
+                <div class="prize_container">
+                    <h1 id="prizeLabel" class="prize_label"></h1>
+                    <!-- <img src="images/Prize.png" alt="prize"> -->
+                </div>
+            </div>
+            <button class="play_again" id="playAgain">Pick</button>
+            <h1 class="wow" id="wow">WOW!</h1>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+        integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./lib/main.js"></script>
+</body>
+
+</html>
